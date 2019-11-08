@@ -7,6 +7,7 @@
     .txtNews.left
         width: initial
         display: flex
+        justify-content: center
         flex-wrap: wrap
         span
         strong
@@ -40,14 +41,6 @@
             max-width 100%
             .newsletter-box
                 justify-content: center;
-            input.btNews
-                margin 10px auto
-                float none
-                font-size: 0 !important
-                &:before
-                    content: 'Enviar'
-                    font: 12px
-                    text-transform uppercase
     @media(max-width 480px)
         .newsletter-box
             flex-wrap: wrap
@@ -57,6 +50,7 @@
 
 .footerNewsForm
     width: 100% !important
+    flex-wrap: wrap
     input.btNews
         margin 10px auto
         float none
@@ -107,8 +101,8 @@
             text-align: center
     .footerNewsForm
         float: none
-
         display: flex
+        
         align-items: center
         justify-content: space-between
         padding 0
@@ -168,3 +162,11 @@
         height: 35px
         display: block
         margin-right 5px
+div#fbits-cadastro-newsletter
+    span#newsletter-mensagem
+        width: 100%
+        display block
+        margin 0 auto
+        text-align center
+        float: none
+        position relative

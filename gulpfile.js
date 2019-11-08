@@ -9,13 +9,13 @@ const
 
 const paths = {
     DIST: 'dist',
-    PROXY: 'http://' + packageJSON.name + '.ecommercestore.com.br',
-    PROXY2: 'http://recursos.' + packageJSON.name + '.ecommercestore.com.br/c',
+    PROXY: 'https://www2.' + packageJSON.name + '.com.br',
+    PROXY2: 'https://recursos.' + packageJSON.name + '.com.br/c',
     CSS: 'src/styl'
 };
 
-let innerIp1 = 'http://localhost:3000';
-let innerIp2 = 'http://localhost:4000';
+let innerIp1 = 'https://localhost:3000';
+let innerIp2 = 'https://localhost:4000';
 
 gulp.task('browserSync', function() {
     browserSync.init({
