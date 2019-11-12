@@ -48,9 +48,17 @@ input
 
 input[type="text"]
 input[type="password"]
-    border: 1px solid #ddd
-    height: 40px
+    border: 1px solid #ddd 
     padding: 0 10px
+
+.cadastroUsuario input#TelefonePrincipalDDD, .cadastroUsuario input#TelefoneSecundarioDDD
+  width 10%!important
+
+.cadastroUsuario input#TelefonePrincipal, .cadastroUsuario input#TelefoneSecundario
+  width 63%!important
+
+  @media(max-width: 425px)
+    width 44%!important
 
 .fbits-responsive-carrinho-desconto-input
   input.form-control
@@ -209,6 +217,17 @@ section.submenu-carrinho
 .fbits-responsive-carrinho-detalhes input.form-control
   height: 34px!important
 
+body.fbits-login
+  input#NomeEndereco, input#NomeCompleto, .cadastroUsuario .btn-primary
+      height: 45px!important
+
+  .fbits-btn-show-password
+    top: 25px!important
+
+    @media(max-width: 425px)
+      top: 30px!important
+
+
 .block__mail
   background: #007e97
   color: #fff
@@ -218,6 +237,7 @@ section.submenu-carrinho
   text-align: center
   margin-bottom 10px
   border: 1px dashed #fff
+  margin-top 30px
 
   a
     display: block
